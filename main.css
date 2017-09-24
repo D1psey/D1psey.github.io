@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: rgba(220, 220, 220, 1);
+	font-family: Arial, sans-serif;
+	line-height: 1.5;
+}
+
+/*-------------------------------------------------------------*/
+
+@media only screen and (min-width: 240px){/* Smartphones */
+	.app-header{
+		height: 10%;
+	}
+}
+ 
+@media only screen and (min-width : 768px){/* tablets */
+	.app-header{
+		height: 40px;
+	}
+}
+
+@media only screen and (min-width: 1024px){/* PC */
+	.app-header{
+		height: 50px;
+	}
+}
+/*-------------------------------------------------------------*/
+
+.app-header{
+	position: absolute;
+	
+	width: 100%;
+	transition: all 0.3s;
+	   background-image: -webkit-linear-gradient(bottom, #14171B, #22252A);
+    background-image: linear-gradient(to top,#14171B, #22252A);
+}
+
+.hmenu-item {
+	color: white;
+	display: inline-block;
+	height: 100%;
+	width: 60px;
+	/*border: 1px solid black;*/
+	text-align: center;
+	padding: 0 5px;	
+ 	margin: 0 auto;	
+}
+
+.hmenu-item:hover{
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.nav-menu {
+  height: 40px;
+  width: 40px;
+  background: url("img/navbar.png") no-repeat;
+}
+
+/*---------------------------------------------*/
+.color-line{
+	left:0;
+	right: 0;
+	display: inline-block;
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	bottom: -4px;
+	list-style: none;
+	overflow: hidden;
+}
+
+.app-header .color-line .color{	
+	position: absolute;
+	width: 34%;
+	height: 4px;
+}
+
+.color:nth-child(1){
+	left: 0;
+	background: rgba(255, 0, 0, 1);
+}
+
+.color:nth-child(2){
+	left: 33%;
+	background: rgba(0, 255, 0, 1);
+}
+
+.color:nth-child(3){
+	left: 66%;
+	background: rgba(0, 0, 255, 1);
+}
+/*---------------------------------------------*/
