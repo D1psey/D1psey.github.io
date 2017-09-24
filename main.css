@@ -5,7 +5,7 @@
 }
 
 body{
-	background-color: rgba(220, 220, 220, 1);
+	background-color: #3c3c3c;
 	font-family: Arial, sans-serif;
 	line-height: 1.5;
 }
@@ -14,13 +14,13 @@ body{
 
 @media only screen and (min-width: 240px){/* Smartphones */
 	.app-header{
-		height: 10%;
+		height: 12%;
 	}
 }
  
 @media only screen and (min-width : 768px){/* tablets */
 	.app-header{
-		height: 40px;
+		height: 60px;
 	}
 }
 
@@ -33,10 +33,9 @@ body{
 
 .app-header{
 	position: absolute;
-	
 	width: 100%;
 	transition: all 0.3s;
-	   background-image: -webkit-linear-gradient(bottom, #14171B, #22252A);
+	background-image: -webkit-linear-gradient(bottom, #14171B, #22252A);
     background-image: linear-gradient(to top,#14171B, #22252A);
 }
 
@@ -56,11 +55,53 @@ body{
 	background: rgba(0, 0, 0, 0.5);
 }
 
-.nav-menu {
-  height: 40px;
-  width: 40px;
-  background: url("img/navbar.png") no-repeat;
+/*--------------------------------------------*/
+.nav-icon {
+	margin: 0.75em;
+    width: 40px;
 }
+
+.nav-icon:before,
+.nav-icon:after,
+.nav-icon div {
+    background-color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 5px 0;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.nav-icon:hover:before{
+    -webkit-transform : translateY(12px) rotate(135deg);
+    -moz-transform    : translateY(12px) rotate(135deg);
+    -ms-transform     : translateY(12px) rotate(135deg);
+    -o-transform      : translateY(12px) rotate(135deg);
+    transform         : translateY(12px) rotate(135deg);
+}
+.nav-icon:hover:after{
+    -webkit-transform : translateY(-9px) rotate(-135deg);
+    -moz-transform    : translateY(-9px) rotate(-135deg);
+    -ms-transform     : translateY(-9px) rotate(-135deg);
+    -o-transform      : translateY(-9px) rotate(-135deg);
+    transform         : translateY(-9px) rotate(-135deg);
+}
+
+.nav-icon:hover div{
+    -webkit-transform : scale(0);
+    -moz-transform    : scale(0);
+    -ms-transform     : scale(0);
+    -o-transform      : scale(0);
+    transform         : scale(0);
+}
+
+
 
 /*---------------------------------------------*/
 .color-line{

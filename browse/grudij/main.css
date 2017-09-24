@@ -126,6 +126,7 @@ header {
 
 #one {
     background: url("img/bg-1-1920x1080.png") no-repeat #f5f5f5;
+    background-size: 100%;
 }
 
 .inner div{
@@ -145,6 +146,7 @@ header {
 
 #two {
     background: url("img/1.jpg") no-repeat #f5f5f5;
+    background-size: 100%;
 }
 
 #two div p {
@@ -153,16 +155,20 @@ header {
 
 #three {
     background: url("img/2.jpg") no-repeat #f5f5f5;
+    background-size: 100%;
 }
 
 #four {
     background: url("img/1945.jpg") no-repeat #f5f5f5;
+    background-size: 100%;
 }
 
 #five{
     background: url("img/2013.jpg") no-repeat #f5f5f5;
+    background-size: 100%;
 }
 
 #six{
     background: url("img/1944.jpg") no-repeat #f5f5f5;
+    background-size: 100%;
 }
